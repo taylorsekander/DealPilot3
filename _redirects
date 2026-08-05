@@ -1,3 +1,0 @@
-# Cloudflare Pages SPA fallback.
-# Pages Functions (/api/*) are matched BEFORE this rule, so they are unaffected.
-/*  /index.html  200
