@@ -1,0 +1,17 @@
+# ============================================================================
+# Cloudflare Pages configuration
+#
+# Only needed if you deploy with the Wrangler CLI or want config in the repo
+# rather than the dashboard. The dashboard flow works without this file.
+# ============================================================================
+
+name = "dealpilot"
+pages_build_output_dir = "."
+
+# Workers runtime version. Keep this current-ish; it gates which web APIs exist.
+compatibility_date = "2026-08-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Secrets are NOT set here — that would put them in git.
+# Dashboard: Workers & Pages → your project → Settings → Variables and Secrets
+# CLI:       npx wrangler pages secret put AUTODEV_API_KEY
